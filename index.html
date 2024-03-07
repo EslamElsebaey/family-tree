@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/dragstyles.css">
+    <title>Family Tree</title>
+</head>
+<body>
+
+
+
+
+<!-- Start container -->
+
+  <div class="container">
+    <div class="parent">
+      <div class="members">
+        <div class="member" draggable="true" id="member1">
+          <img src="images/user1.jpg" alt="Member 1">
+          <p>Member 1</p>
+        </div>
+        <div class="member" draggable="true" id="member2">
+            <img src="images/user2.jpg" alt="Member 2">
+            <p>Member 2</p>
+        </div>
+        <div class="member" draggable="true" id="member3">
+            <img src="images/user3.jfif" alt="Member 3">
+            <p>Member 3</p>
+        </div>
+        <div class="member" draggable="true" id="member4">
+          <img src="images/user4.jfif" alt="Member 4">
+          <p>Member 4</p>
+        </div>
+        <div class="member" draggable="true" id="member5">
+          <img src="images/user5.jfif" alt="Member 5">
+          <p>Member 5</p>
+        </div>
+        <div class="member" draggable="true" id="member6">
+          <img src="images/user6.jfif" alt="Member 6">
+          <p>Member 6</p>
+        </div>
+    </div>
+    <div class="placeholders">
+        <div class="placeholder" id="level1" droppable="true">
+          <img src="images/placeholder.avif" alt="">
+          <p>Level 1</p>
+        </div>
+        <div class="placeholder" id="level2" droppable="true">
+          <img src="images/placeholder.avif" alt="">
+          <p>Level 2</p>
+        </div>
+        <div class="placeholder" id="level3" droppable="true">
+          <img src="images/placeholder.avif" alt="">
+          <p>Level 3</p>
+        </div>
+        <div class="placeholder" id="level4" droppable="true">
+          <img src="images/placeholder.avif" alt="">
+          <p>Level 4</p>
+        </div>
+    </div>
+    </div>
+
+  </div>
+<!--  End container -->
+
+
+
+<!-- Start Popup -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <div class="popup-header ">
+      <p>Select level</p>
+      <i class="fa fa-times"></i>
+    </div>
+    <select id="mySelect">
+        <option value="0" disabled selected>Select</option>
+        <option value="1">Level 1</option>
+        <option value="2">Level 2</option>
+        <option value="3">Level 3</option>
+        <option value="4">Level 4</option>
+    </select>
+  </div>
+   
+</div>
+<!--  End Popup -->
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
